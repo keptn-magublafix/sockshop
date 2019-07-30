@@ -3,7 +3,7 @@ cartsDb:
         name: carts-db
     image:
         pullPolicy: IfNotPresent
-        repository: mongo
+        repository: docker.io/mongo
     replicaCount: 1
     service:
         externalPort: 27017
@@ -14,7 +14,7 @@ cartsDbBlue:
         name: carts-db
     image:
         pullPolicy: IfNotPresent
-        repository: mongo
+        repository: docker.io/mongo
     replicaCount: 1
     service:
         externalPort: 27017
@@ -25,7 +25,7 @@ cartsDbGreen:
         name: carts-db
     image:
         pullPolicy: IfNotPresent
-        repository: mongo
+        repository: docker.io/mongo
     replicaCount: 1
     service:
         externalPort: 27017
