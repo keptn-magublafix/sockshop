@@ -20,6 +20,14 @@ spec:
         image: "{{ .Values.cartsDb.image.repository }}:{{ .Values.cartsDb.image.tag }}"
         imagePullPolicy: {{ .Values.cartsDb.image.pullPolicy }}
         env:
+        - name: MONGODB_USER
+          value: user
+        - name: MONGODB_PASSWORD
+          value: password
+        - name: MONGODB_DATABASE
+          value: database_name
+        - name: MONGODB_ADMIN_PASSWORD
+          value: password
         - name: DT_TAGS
           value: "application={{ .Chart.Name }}"
         - name: POD_NAME
