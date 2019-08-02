@@ -3,7 +3,7 @@ cartsDb:
         name: carts-db
     image:
         pullPolicy: IfNotPresent
-        repository: registry.access.redhat.com/rhscl/mongodb-34-rhel7
+        repository: centos/mongodb-34-centos7
         tag: latest
     replicaCount: 1
     service:
