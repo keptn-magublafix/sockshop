@@ -4,7 +4,7 @@ metadata:
   name: sockshop-dev-carts
 spec:
   hosts:
-  - "carts.sockshop-dev.172.29.145.51.xip.io"
+  - "carts.sockshop-dev.ossandbox.itfabrik.at"
   gateways:
   - sockshop-dev-gateway
   http:
